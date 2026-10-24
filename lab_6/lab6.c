@@ -30,28 +30,16 @@ double prac2(double x) {
 }
 
 
-int prac3(int A, int B) {
-    int a = 0;
-    if (B == 0) {
-        a = 1;
+int dz(int A, int B) {
+    if (B == 0) 
+    {
+        printf("Ошибка: деление на ноль\n");
     }
-    else {
-        a = 0;
+    else 
+    {
+        printf("%s\n", (A % B == 0) ? "Да, числа делятся нацело" : "Нет, числа не делятся нацело");
     }
-    return a;
-}
-
-int dz(float x, float y) {
-    if (x > 6 || x < 0 || y > 6 || y < 0) {
-        return -1;
-    }
-    if (y > -1.0 * x + 6.0) {
-        return -1;
-    }
-    if (y < -2.0 * x + 4.0) {
-        return -1;
-    }
-    return 1;
+    return 0;
 }
 
 int main() {
@@ -80,34 +68,11 @@ int main() {
         (x > 3.6) ? "x > 3.6" : "x <= 3.6");
 
 
-    printf("\nЗадание 3\n\n");
+    printf("\nДомашнее задание\n\n");
     int A, B;
     printf("Введите A: ");
     scanf_s("%d", &A);
     printf("Введите B: ");
     scanf_s("%d", &B);
-    int a = prac3(A, B);
-    if (a == 1) {
-        printf("Ошибка: деление на ноль\n");
-    }
-    else {
-        printf("%s\n", (A % B == 0) ? "Да" : "Нет");
-    }
-
-
-    printf("\nДз\n\n");
-    float x1, y1;
-    printf("Введите x: ");
-    scanf_s("%f", &x1);
-    printf("Введите y: ");
-    scanf_s("%f", &y1);
-    int result = dz(x1, y1);
-    if (result == 1) {
-        printf("Точка (%.2f, %.2f) принадлежит области\n", x1, y1);
-    }
-    else {
-        printf("Точка (%.2f, %.2f) не принадлежит области\n", x1, y1);
-    }
-    return 0;
-
+    dz(A, B);
 }
