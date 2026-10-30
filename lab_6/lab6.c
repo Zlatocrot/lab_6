@@ -31,15 +31,16 @@ double prac2(double x) {
 
 
 int dz(int A, int B) {
+    int a;
     if (B == 0) 
     {
         printf("Ошибка: деление на ноль\n");
     }
     else 
     {
-        printf("%s\n", (A % B == 0) ? "Да, числа делятся нацело" : "Нет, числа не делятся нацело");
+        a = (A % B == 0) ? 1 : -1;
     }
-    return 0;
+    return a;
 }
 
 int main() {
@@ -74,5 +75,12 @@ int main() {
     scanf_s("%d", &A);
     printf("Введите B: ");
     scanf_s("%d", &B);
-    dz(A, B);
+    if (dz(A, B) == 1)
+    {
+        printf("Да, числа делятся нацело");
+    }
+    else 
+    {
+        printf("Нет, числа не делятся нацело");
+    }
 }
