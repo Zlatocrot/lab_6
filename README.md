@@ -21,6 +21,9 @@
 ***Блок-схема***
 
 <img width="866" height="754" alt="image" src="https://github.com/user-attachments/assets/dc50e444-1912-4897-9a9f-a80eeb5aa4df" />
+<img width="433" height="464" alt="image" src="https://github.com/user-attachments/assets/df8c4aef-493e-45da-a133-17ff40be9b0c" />
+
+
 
 
 https://drive.google.com/file/d/1vP0MGJjUn57YoOb8uTcLqtuo3e4B1np9/view?usp=sharing
